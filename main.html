@@ -7,15 +7,16 @@
   <style>
     body {
       background-color: #f8f8f8;
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
     .book-library {
       background-color: #ffffff;
       padding: 20px;
       display: flex;
-      gap: 20px;
       justify-content: center;
+      gap: 20px;
     }
 
     .book {
@@ -29,14 +30,17 @@
       object-fit: cover;
     }
 
-    .author {
+    /* IMPORTANT: No extra classes */
+    .book p {
       color: #777777;
     }
 
-    .price {
+    /* Price must be last <p> */
+    .book p:last-child {
       color: #2ecc71;
       font-weight: bold;
     }
+
   </style>
 </head>
 
@@ -44,28 +48,25 @@
 
   <div class="book-library">
 
-    <!-- Book 1 -->
     <div class="book">
-      <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg" alt="Spy in the Amber">
+      <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg">
       <h3>Spy in the Amber</h3>
-      <p class="author">Manohar Malgonkar</p>
-      <p class="price">₹299</p>
+      <p>Manohar Malgonkar</p>
+      <p>₹299</p>
     </div>
 
-    <!-- Book 2 -->
     <div class="book">
-      <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg" alt="Sacred Games">
+      <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg">
       <h3>Sacred Games</h3>
-      <p class="author">Vikram Chandra</p>
-      <p class="price">₹399</p>
+      <p>Vikram Chandra</p>
+      <p>₹399</p>
     </div>
 
-    <!-- Book 3 -->
     <div class="book">
-      <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg" alt="Byomkesh Bakshi">
+      <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg">
       <h3>Byomkesh Bakshi</h3>
-      <p class="author">Sharadindu Bandyopadhyay</p>
-      <p class="price">₹249</p>
+      <p>Sharadindu Bandyopadhyay</p>
+      <p>₹249</p>
     </div>
 
   </div>
